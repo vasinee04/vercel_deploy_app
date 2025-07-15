@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div style="
+    background: #fff0f5;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+">
+
+    <h1 style="color: #d63384; font-size: 2.8rem; font-weight: 800; margin-bottom: 1.2rem;">
+        ABOUT US 💖
+
+    </h1>
+
+    <img src="{% static 'assets/img/ui.png' %}" alt="Bell Profile" style="
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #ffe0ec;
+        box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+        margin-bottom: 1.5rem;
+    ">
+
+    <h2 style="font-size: 2rem; font-weight: bold; color: #c2185b;">อุ๋งอิ๋ง</h2>
+    <p style="font-size: 1.1rem; color: #6b1b3a;">นางสาววาสินี มาฤทธิ์  6712732126</p>
+
+    <div style="
+        background-color: #f8bbd0;
+        color: #4a0c24;
+        padding: 1rem 1.5rem;
+        border-radius: 12px;
+        margin-top: 1.5rem;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        font-weight: 600;
+    ">
+        <p style="margin-bottom: 0.8rem;">🎓 <strong>สาขา :</strong> วิทยาการคอมพิวเตอร์</p>
+        <p style="margin-bottom: 0.8rem;">🏫 <strong>มหาวิทยาลัย :</strong> มหาวิทยาลัยราชภัฏศรีสะเกษ</p>
+        <p style="margin-bottom: 0;">🎮 <strong>งานอดิเรก :</strong> เล่นเกม, ฟังเพลง, ดูหนัง, เล่นแบดมินตัน, วาดรูป, งานออกแบบ</p>
+    </div>
+
+</div>
+{% endblock %}

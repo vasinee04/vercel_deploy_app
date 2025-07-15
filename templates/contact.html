@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_head %}
+<!-- โหลดไอคอน Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- ฟอนต์น่ารักจาก Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div style="
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(to bottom right, #ffe6f0, #fff0f8);
+    box-shadow: 0 0 25px rgba(255, 105, 180, 0.25);
+    font-family: 'Mali', cursive;
+    color: #6a1b4d;
+    text-align: center;
+">
+
+    <!-- รูปโปรไฟล์ -->
+    <img src="{% static 'assets/img/ui.png' %}" alt="Vasinee" style="
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px dashed #f48fb1;
+        background: white;
+        margin-bottom: 1rem;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    ">
+
+    <!-- หัวเรื่อง -->
+    <h2 style="
+        color: #d63384;
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    ">
+        💌 ติดต่อ 💖
+    </h2>
+
+    <!-- เส้นคั่นหัวใจ -->
+    <div style="
+        width: 100px;
+        height: 3px;
+        background: #f8bbd0;
+        margin: 1rem auto 2rem;
+        border-radius: 10px;
+        position: relative;
+    ">
+        <span style="
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2rem;
+            color: #f06292;
+        ">❤️</span>
+    </div>
+
+    <!-- รายการติดต่อ -->
+    <ul style="list-style: none; padding: 0; margin: 0 auto; max-width: 400px; text-align: left;">
+        <li style="margin-bottom: 1rem; background: #fff; padding: 0.8rem 1rem; border-radius: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'"
+            onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <i class="fab fa-facebook fa-lg" style="width: 32px; color: #3b5998; margin-right: 0.8rem;"></i>
+            <a href="https://www.facebook.com/vasinee423" target="_blank" style="color: #6a1b4d; text-decoration: none;">
+                Vasinee Marit
+            </a>
+        </li>
+
+        <li style="margin-bottom: 1rem; background: #fff; padding: 0.8rem 1rem; border-radius: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'"
+            onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <i class="fab fa-instagram fa-lg" style="width: 32px; color: #e1306c; margin-right: 0.8rem;"></i>
+            <a href="https://www.instagram.com/littlee.ii/" target="_blank" style="color: #6a1b4d; text-decoration: none;">
+                littlee.ii
+            </a>
+        </li>
+
+        <li style="margin-bottom: 1rem; background: #fff; padding: 0.8rem 1rem; border-radius: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'"
+            onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <i class="fab fa-line fa-lg" style="width: 32px; color: #00c300; margin-right: 0.8rem;"></i>
+            <a href="https://line.me/ti/p/3TIUOcU7WA" target="_blank" style="color: #6a1b4d; text-decoration: none;">
+                - VASINEE -
+            </a>
+        </li>
+
+        <li style="margin-bottom: 1rem; background: #fff; padding: 0.8rem 1rem; border-radius: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'"
+            onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <i class="fas fa-envelope fa-lg" style="width: 32px; color: #ff4081; margin-right: 0.8rem;"></i>
+            <a href="mailto:vasineemalit2546@gmail.com" style="color: #6a1b4d; text-decoration: none;">
+                vasineemalit2546@gmail.com
+            </a>
+        </li>
+
+        <li style="margin-bottom: 1rem; background: #fff; padding: 0.8rem 1rem; border-radius: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'"
+            onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <i class="fas fa-phone fa-lg" style="width: 32px; color: #03a9f4; margin-right: 0.8rem;"></i>
+            <a href="tel:0936168113" style="color: #6a1b4d; text-decoration: none;">
+                0936168113
+            </a>
+        </li>
+    </ul>
+</div>
+{% endblock %}
